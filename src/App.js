@@ -6,7 +6,7 @@ import Reader from './components/Reader';
 const App = () => (
   <Switch>
     <Route path="/reader" component={Reader} />
-    <Redirect to="/reader" />
+    <Redirect from="/*" to="/reader" />
   </Switch>
 );
 export default App;
